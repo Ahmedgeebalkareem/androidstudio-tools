@@ -1,0 +1,131 @@
+{
+    "android_sdk": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/sdk/android-sdk.tar.xz",
+    "android_sdk_versions": {
+        "x86_64": {
+            "_33": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/sdk/android-sdk.tar.xz",
+            "_34": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-34.tar.xz",
+            "_35": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-35.tar.xz",
+            "_36": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-36.tar.xz",
+            "_37": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-37.tar.xz"
+        },
+        "aarch64": {
+            "_33": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/sdk/android-sdk.tar.xz",
+            "_34": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-34.tar.xz",
+            "_35": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-35.tar.xz",
+            "_36": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-36.tar.xz",
+            "_37": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-37.tar.xz"
+        },
+        "arm": {
+            "_33": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/sdk/android-sdk.tar.xz",
+            "_34": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-34.tar.xz",
+            "_35": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-35.tar.xz",
+            "_36": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-36.tar.xz",
+            "_37": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/android-sdk/android-sdk-37.tar.xz"
+        }
+    },
+    "cmdline_tools": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/sdk/cmdline-tools.tar.xz",
+    "build_tools": {
+        "x86_64": {
+            "_34_0_4": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.4/build-tools-34.0.4-x86_64.tar.xz"
+        },
+        "aarch64": {
+            "_34_0_4": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v34.0.4/build-tools-34.0.4-aarch64.tar.xz",
+            "_34_0_3": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.3/build-tools-34.0.3-aarch64.tar.xz",
+            "_34_0_1": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.1/build-tools-34.0.1-aarch64.tar.xz",
+            "_34_0_0": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.0/build-tools-34.0.0-aarch64.tar.xz",
+            "_33_0_3": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v33.0.3/build-tools-33.0.3-aarch64.tar.xz",
+            "_33_0_1": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v33.0.1/build-tools-33.0.1-aarch64.tar.xz",
+            "_35_0_2": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v35.0.2/build-tools-35.0.2-aarch64.tar.xz",
+            "_36_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v36.0.0/build-tools-36.0.0-aarch64.tar.xz",
+            "_37_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v37.0.0/build-tools-37.0.0-aarch64.tar.xz",
+            "_30_0_3": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v30.0.3/build-tools-30.0.3-aarch64.tar.xz",
+            "_31_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v31.0.0/build-tools-31.0.0-aarch64.tar.xz",
+            "_32_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v32.0.0/build-tools-32.0.0-aarch64.tar.xz",
+            "_32_1_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v32.1.0/build-tools-32.1.0-aarch64.tar.xz",
+            "_33_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v33.0.0/build-tools-33.0.0-aarch64.tar.xz",
+            "_33_0_2": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v33.0.2/build-tools-33.0.2-aarch64.tar.xz"
+        },
+        "arm": {
+            "_34_0_4": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v34.0.4/build-tools-34.0.4-arm.tar.xz",
+            "_34_0_3": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.3/build-tools-34.0.3-arm.tar.xz",
+            "_34_0_1": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.1/build-tools-34.0.1-arm.tar.xz",
+            "_34_0_0": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.0/build-tools-34.0.0-arm.tar.xz",
+            "_33_0_3": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v33.0.3/build-tools-33.0.3-arm.tar.xz",
+            "_33_0_1": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v33.0.1/build-tools-33.0.1-arm.tar.xz",
+            "_35_0_2": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v35.0.2/build-tools-35.0.2-arm.tar.xz",
+            "_36_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v36.0.0/build-tools-36.0.0-arm.tar.xz",
+            "_37_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v37.0.0/build-tools-37.0.0-arm.tar.xz",
+            "_30_0_3": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v30.0.3/build-tools-30.0.3-arm.tar.xz",
+            "_31_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v31.0.0/build-tools-31.0.0-arm.tar.xz",
+            "_32_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v32.0.0/build-tools-32.0.0-arm.tar.xz",
+            "_32_1_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v32.1.0/build-tools-32.1.0-arm.tar.xz",
+            "_33_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v33.0.0/build-tools-33.0.0-arm.tar.xz",
+            "_33_0_2": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v33.0.2/build-tools-33.0.2-arm.tar.xz"
+        }
+    },
+    "platform_tools": {
+        "x86_64": {
+            "_34_0_4": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.4/platform-tools-34.0.4-x86_64.tar.xz"
+        },
+        "aarch64": {
+            "_34_0_4": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v34.0.4/platform-tools-34.0.4-aarch64.tar.xz",
+            "_34_0_3": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.3/platform-tools-34.0.3-aarch64.tar.xz",
+            "_34_0_1": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.1/platform-tools-34.0.1-aarch64.tar.xz",
+            "_34_0_0": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.0/platform-tools-34.0.0-aarch64.tar.xz",
+            "_33_0_3": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v33.0.3/platform-tools-33.0.3-aarch64.tar.xz",
+            "_33_0_1": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v33.0.1/platform-tools-33.0.1-aarch64.tar.xz",
+            "_35_0_2": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v35.0.2/platform-tools-35.0.2-aarch64.tar.xz",
+            "_36_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v36.0.0/platform-tools-36.0.0-aarch64.tar.xz",
+            "_37_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v37.0.0/platform-tools-37.0.0-aarch64.tar.xz",
+            "_30_0_3": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v30.0.3/platform-tools-30.0.3-aarch64.tar.xz",
+            "_31_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v31.0.0/platform-tools-31.0.0-aarch64.tar.xz",
+            "_32_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v32.0.0/platform-tools-32.0.0-aarch64.tar.xz",
+            "_32_1_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v32.1.0/platform-tools-32.1.0-aarch64.tar.xz",
+            "_33_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v33.0.0/platform-tools-33.0.0-aarch64.tar.xz",
+            "_33_0_2": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v33.0.2/platform-tools-33.0.2-aarch64.tar.xz"
+        },
+        "arm": {
+            "_34_0_4": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v34.0.4/platform-tools-34.0.4-arm.tar.xz",
+            "_34_0_3": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.3/platform-tools-34.0.3-arm.tar.xz",
+            "_34_0_1": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.1/platform-tools-34.0.1-arm.tar.xz",
+            "_34_0_0": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v34.0.0/platform-tools-34.0.0-arm.tar.xz",
+            "_33_0_3": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v33.0.3/platform-tools-33.0.3-arm.tar.xz",
+            "_33_0_1": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/v33.0.1/platform-tools-33.0.1-arm.tar.xz",
+            "_35_0_2": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v35.0.2/platform-tools-35.0.2-arm.tar.xz",
+            "_36_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v36.0.0/platform-tools-36.0.0-arm.tar.xz",
+            "_37_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v37.0.0/platform-tools-37.0.0-arm.tar.xz",
+            "_30_0_3": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v30.0.3/platform-tools-30.0.3-arm.tar.xz",
+            "_31_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v31.0.0/platform-tools-31.0.0-arm.tar.xz",
+            "_32_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v32.0.0/platform-tools-32.0.0-arm.tar.xz",
+            "_32_1_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v32.1.0/platform-tools-32.1.0-arm.tar.xz",
+            "_33_0_0": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v33.0.0/platform-tools-33.0.0-arm.tar.xz",
+            "_33_0_2": "https://github.com/Ahmedgeebalkareem/androidstudio-tools/releases/download/v33.0.2/platform-tools-33.0.2-arm.tar.xz"
+        }
+    },
+    "ndk": {
+        "aarch64": {
+            "_25_0_8775105": "https://github.com/HomuHomu833/android-ndk-custom/releases/download/r25/android-ndk-r25-aarch64-linux-android.tar.xz",
+            "_27_0_12077973": "https://github.com/HomuHomu833/android-ndk-custom/releases/download/r27/android-ndk-r27-aarch64-linux-android.tar.xz",
+            "_28_0_13004108": "https://github.com/HomuHomu833/android-ndk-custom/releases/download/r28/android-ndk-r28-aarch64-linux-android.tar.xz",
+            "_30_0_16248370": "https://github.com/HomuHomu833/android-ndk-custom/releases/download/r30/android-ndk-r30-aarch64-linux-android.tar.xz"
+        },
+        "arm": {
+            "_25_0_8775105": "https://github.com/HomuHomu833/android-ndk-custom/releases/download/r25/android-ndk-r25-armv7a-linux-androideabi.tar.xz",
+            "_27_0_12077973": "https://github.com/HomuHomu833/android-ndk-custom/releases/download/r27/android-ndk-r27-armv7a-linux-androideabi.tar.xz",
+            "_28_0_13004108": "https://github.com/HomuHomu833/android-ndk-custom/releases/download/r28/android-ndk-r28-armv7a-linux-androideabi.tar.xz",
+            "_30_0_16248370": "https://github.com/HomuHomu833/android-ndk-custom/releases/download/r30/android-ndk-r30-armv7a-linux-androideabi.tar.xz"
+        }
+    },
+    "jdk": {
+        "aarch64": {
+            "_11": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/jdk-11/jdk11-aarch64.tar.xz"
+        },
+        "arm": {
+            "_11": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/jdk-11/jdk11-aarch32.tar.xz"
+        }
+    },
+    "jdk_11": {
+        "aarch64": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/jdk-11/jdk11-aarch64.tar.xz",
+        "arm": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/jdk-11/jdk11-aarch32.tar.xz"
+    }
+}
