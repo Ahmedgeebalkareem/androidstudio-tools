@@ -115,17 +115,5 @@
             "_28_0_13004108": "https://github.com/HomuHomu833/android-ndk-custom/releases/download/r28/android-ndk-r28-armv7a-linux-androideabi.tar.xz",
             "_30_0_16248370": "https://github.com/HomuHomu833/android-ndk-custom/releases/download/r30/android-ndk-r30-armv7a-linux-androideabi.tar.xz"
         }
-    },
-    "jdk": {
-        "aarch64": {
-            "_11": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/jdk-11/jdk11-aarch64.tar.xz"
-        },
-        "arm": {
-            "_11": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/jdk-11/jdk11-aarch32.tar.xz"
-        }
-    },
-    "jdk_11": {
-        "aarch64": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/jdk-11/jdk11-aarch64.tar.xz",
-        "arm": "https://github.com/AndroidIDEOfficial/androidide-tools/releases/download/jdk-11/jdk11-aarch32.tar.xz"
     }
 }
