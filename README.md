@@ -1,8 +1,9 @@
 # androidstudio-tools
 
 It lets AndroidIDE install the Android SDK **build-tools**, **platform-tools**,
-**platforms**, **NDK** and **JDK** from a single manifest, with support for
-**more versions** and for **32-bit arm** devices (`arm`), not just `aarch64`.
+**platforms** and **NDK** from a single manifest, with support for **more
+versions** and for **32-bit arm** devices (`arm`), not just `aarch64`. (JDK
+`17`/`21` are installed from the Termux package repository.)
 
 - **Manifest (single source of truth):**
   ```
@@ -26,12 +27,12 @@ sdk-install.sh -m <manifest-url> -t platform-tools -v 34.0.4 -y
 sdk-install.sh -m <manifest-url> -t sdk            -v 35     -y
 sdk-install.sh -m <manifest-url> -t ndk            -v 27.0.12077973 -y
 sdk-install.sh -m <manifest-url> -t cmdline-tools  -y
-sdk-install.sh -m <manifest-url> -t jdk            -v 11 -y
+sdk-install.sh -m <manifest-url> -t jdk            -v 17 -y
 ```
 
 `-v` accepts any version listed below. `sdk` takes an Android **API level**
-(`33`–`37`); `ndk` takes the full NDK revision; `jdk` accepts `11` (tarball) or
-`17`/`21` (installed via the Termux package manager).
+(`33`–`37`); `ndk` takes the full NDK revision; `jdk` accepts `17`/`21`
+(installed via the Termux package manager).
 
 ## Available packages
 
@@ -81,9 +82,10 @@ Architecture independent — the same bundle is listed for every ABI.
 
 ### JDK
 
+Installed from the Termux package repository (not from this manifest).
+
 | Version | aarch64 | arm | Install method |
 |---|---|---|---|
-| 11 | ✅ | ✅ | tarball from this manifest |
 | 17 | ✅ | ✅ | Termux `openjdk-17` package |
 | 21 | ✅ | ✅ | Termux `openjdk-21` package |
 
@@ -103,8 +105,7 @@ Architecture independent — the same bundle is listed for every ABI.
   },
   "platform_tools": { /* same keys as build_tools */ },
 
-  "ndk": { "aarch64": { "_27_0_12077973": "<url>" }, "arm": { … } },
-  "jdk": { "aarch64": { "_11": "<url>" }, "arm": { "_11": "<url>" } }
+  "ndk": { "aarch64": { "_27_0_12077973": "<url>" }, "arm": { … } }
 }
 ```
 
@@ -128,15 +129,15 @@ Architecture independent — the same bundle is listed for every ABI.
 - **ndk** — community Android-host builds
   ([HomuHomu833/android-ndk-custom](https://github.com/HomuHomu833/android-ndk-custom)),
   installed under `sdk/ndk/<revision>`.
-- **jdk** — JDK 11 is a standalone tarball (extracted to
-  `$PREFIX/lib/jvm/java-11-openjdk`); 17/21 come from Termux packages.
+- **jdk** — installed from Termux packages (`17`/`21`); not published in the
+  manifest.
 
 ## Credits
 
 Based on and compatible with
 [AndroidIDEOfficial/androidide-tools](https://github.com/AndroidIDEOfficial/androidide-tools)
-(manifest format, `34.0.4`, `33.0.1`/`33.0.3`, JDK 11, android-sdk and
-cmdline-tools assets) and
+(manifest format, `34.0.4`, `33.0.1`/`33.0.3`, android-sdk and cmdline-tools
+assets) and
 [HomuHomu833/android-ndk-custom](https://github.com/HomuHomu833/android-ndk-custom)
 (NDK Android-host builds). All rights belong to their respective owners.
 
