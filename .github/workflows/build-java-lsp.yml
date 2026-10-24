@@ -1,0 +1,65 @@
+name: Build Java Language Server
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Install protobuf compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y protobuf-compiler
+
+      - name: Build java-language-server v0.2.48 from upstream
+        run: |
+          set -e
+          VERSION="v0.2.48"
+          REPO="https://github.com/georgewfraser/java-language-server.git"
+          WORKDIR="$RUNNER_TEMP/java-lsp"
+          ASSETS="$GITHUB_WORKSPACE/lsp/java/src/main/assets/java-language-server"
+          
+          mkdir -p "$WORKDIR" "$ASSETS"
+          rm -f "$ASSETS"/*.jar "$ASSETS"/LICENSE
+          
+          git clone --depth 1 --branch "$VERSION" "$REPO" "$WORKDIR/src"
+          cd "$WORKDIR/src"
+          
+          if [ ! -f "src/main/java/com/google/devtools/build/lib/analysis/AnalysisProtos.java" ]; then
+            chmod +x scripts/gen_proto.sh
+            ./scripts/gen_proto.sh
+          fi
+          
+          mvn -q -DskipTests package
+          
+          cp dist/classpath/java-language-server.jar "$ASSETS/"
+          cp dist/classpath/gson-*.jar "$ASSETS/"
+          cp dist/classpath/protobuf-java-*.jar "$ASSETS/"
+          [ -f LICENSE ] && cp LICENSE "$ASSETS/"
+          
+          echo "=== Built jars ==="
+          ls -lh "$ASSETS"
+
+      - name: Upload jars
+        uses: actions/upload-artifact@v4
+        with:
+          name: java-language-server-jars
+          path: |
+            lsp/java/src/main/assets/java-language-server/java-language-server.jar
+            lsp/java/src/main/assets/java-language-server/gson-*.jar
+            lsp/java/src/main/assets/java-language-server/protobuf-java-*.jar
+            lsp/java/src/main/assets/java-language-server/LICENSE
+          if-no-files-found: error
+          
