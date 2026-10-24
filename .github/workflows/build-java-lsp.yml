@@ -1,0 +1,44 @@
+name: Build Java Language Server
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Install protobuf compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y protobuf-compiler
+
+      - name: Fetch build script
+        run: |
+          mkdir -p tools/java-language-server
+          curl -L -o tools/java-language-server/build.sh https://raw.githubusercontent.com/Ahmedgeebalkareem/androidstudio-tools/main/tools/java-language-server/build.sh
+          chmod +x tools/java-language-server/build.sh
+
+      - name: Build Java Language Server v0.2.48
+        run: ./tools/java-language-server/build.sh
+
+      - name: Upload jars
+        uses: actions/upload-artifact@v4
+        with:
+          name: java-language-server-jars
+          path: |
+            lsp/java/src/main/assets/java-language-server/java-language-server.jar
+            lsp/java/src/main/assets/java-language-server/gson-*.jar
+            lsp/java/src/main/assets/java-language-server/protobuf-java-*.jar
+            lsp/java/src/main/assets/java-language-server/LICENSE
+          if-no-files-found: error
